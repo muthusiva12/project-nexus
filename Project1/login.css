@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+/* === Body CSS ===*/
+body{  
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+h2{
+    text-align: center;
+    padding: 5%;
+}
+.signup{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+}
+.signin{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+/* === Main Content CSS ===*/
+.wrapper{
+    padding:50px 25px 0;
+    max-width: 665px;
+    width:100%;
+    margin:auto;
+}
+.wrapper .form{
+    max-width:450px;
+    width:100%;
+    margin:auto;
+}
+.wrapper .form-group{
+    margin-bottom: 15px;
+}
+
+.wrapper .form-group input{
+    display:block;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.1px;
+    padding:11px 15px;
+    height:48px;
+    border-radius: 5px;
+    color:#3C4A57;
+    border:1px solid #e4e8ee;
+    box-shadow: none;
+    width:100%;
+}
+.wrapper .form-group input:focus{
+    outline:none;
+}
+.wrapper .btn{
+    width:100%;
+    margin:15px 0 30px;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    padding:12px 29px;
+    height:48px;
+    text-transform: uppercase;
+    color:white;
+    background-color: green;
+    border:none;
+    border-radius: 2px;
+    cursor: pointer;
+    text-align: center;
+}
+.wrapper .btn:focus{
+    outline:none;
+}
+.wrapper .account-exist{
+    color:#3C4A57;
+    border-top:1px solid #E4E8EE;
+    padding-top:20px;
+    text-align: center;
+}
+.wrapper .account-exist a{
+    color:blue;
+    text-decoration: none;
+}
+.wrapper .forget-password{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:15px 0;
+}
+.wrapper .forget-password a{
+    color:blue;
+    text-decoration: none;
+}
+.wrapper .forget-password .check-box{
+    font-size: 15px;
+    color:black;
+} 
+p{
+    color: red;
+    font-size:  13px;
+    font-style: italic;
+    font-family: 'poppins',sans-serif;
+    display: none;
+}
+.signup.inActive{
+    display:none;
+}
+.signin{
+    display:none;
+}
+.signin.active{
+    display:block;
+}
+
+@media (max-width:1030px){
+    .wrapper::before{
+        left:-25%;
+        min-height: 60vh;
+        height:500px;
+    }
+}
+@media (max-width:767px){
+    .wrapper{
+        max-width: 550px;
+    }
+}
+        
+      
